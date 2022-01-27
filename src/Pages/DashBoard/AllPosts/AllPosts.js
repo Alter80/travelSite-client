@@ -7,7 +7,7 @@ const AllPosts = () => {
     const [allPosts, setAllPosts] = useState([]);
 
     useEffect(() => {
-        fetch('http://localhost:5000/places')
+        fetch('https://murmuring-chamber-98588.herokuapp.com/places')
             .then(res => res.json())
             .then(data => setAllPosts(data));
     }, [allPosts]);
@@ -21,7 +21,7 @@ const AllPosts = () => {
         const proceed = window.confirm('Publish this post?')
 
         if (proceed) {
-            const url = `http://localhost:5000/places/${id}`;
+            const url = `https://murmuring-chamber-98588.herokuapp.com/places/${id}`;
             fetch(url, {
                 method: 'PUT'
             })
@@ -42,7 +42,7 @@ const AllPosts = () => {
         const proceed = window.confirm('Are you sure you want to delete')
 
         if (proceed) {
-            const url = `http://localhost:5000/places/${id}`;
+            const url = `https://murmuring-chamber-98588.herokuapp.com/places/${id}`;
             fetch(url, {
                 method: 'DELETE'
             })

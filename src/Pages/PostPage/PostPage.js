@@ -14,7 +14,7 @@ const PostPage = () => {
         e.target.reset();
         console.log(data);
 
-        fetch(`http://localhost:5000/places/`, {
+        fetch(`https://murmuring-chamber-98588.herokuapp.com/places/`, {
             method: 'POST',
             headers: {
                 'content-type': 'application/json'

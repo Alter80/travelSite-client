@@ -9,7 +9,7 @@ const PlaceDetails = () => {
 
     // data fetch
     useEffect(() => {
-        const url = `http://localhost:5000/places/${id}`;
+        const url = `https://murmuring-chamber-98588.herokuapp.com/places/${id}`;
         fetch(url)
             .then(res => res.json())
             .then(data => setPlace(data));
