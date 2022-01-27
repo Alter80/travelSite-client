@@ -14,6 +14,7 @@ import Login from './Pages/Login/Login';
 import Register from './Pages/Login/Register/Register';
 import PostPage from './Pages/PostPage/PostPage';
 import DashBoard from './Pages/DashBoard/DashBoard';
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"></link>
 
 function App() {
   return (

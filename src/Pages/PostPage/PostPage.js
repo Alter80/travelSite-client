@@ -46,7 +46,10 @@ const PostPage = () => {
     }
 
     return (
-        <div className="container">
+        <div className="container" data-aos="fade-zoom-in"
+            data-aos-easing="ease-in-back"
+            data-aos-delay="500"
+            data-aos-offset="0">
 
             <div className="row">
 

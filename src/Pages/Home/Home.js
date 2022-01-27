@@ -17,7 +17,6 @@ const Home = () => {
                 </Col>
 
                 <Col className='col-md-3 col-sm-12 '>
-                    <h4 className='text-muted'>Related Blogs</h4>
                     <Aside></Aside>
                 </Col>
 

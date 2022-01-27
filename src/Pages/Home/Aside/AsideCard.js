@@ -7,7 +7,7 @@ const AsideCard = (props) => {
 
     const showPosts = (postStatus) => {
         if (postStatus == 'approved') {
-            return <Col className='p-3' >
+            return <Col className='p-3' data-aos="fade-up-left">
                 <Link to={`/places/${_id}`} className='text-decoration-none text-black'>
                     <Card className='hover-card  card-border'>
                         <Card.Img className='p-3 img1 mx-auto rounded img-fluid' variant="top" src={image} />

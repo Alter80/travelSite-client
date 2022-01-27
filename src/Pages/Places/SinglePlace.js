@@ -10,7 +10,7 @@ const SinglePlace = (props) => {
         if (postStatus == 'approved') {
             return <Col className='p-3' >
                 <Link to={`/places/${_id}`} className='text-decoration-none text-black '>
-                    <Card className='hover-card flex-md-row card-border'>
+                    <Card className='hover-card flex-md-row card-border' data-aos="fade-up">
                         <Card.Img className='p-3 img1  mx-auto rounded img-fluid' variant="top" src={image} />
 
                         <Card.Body className='text-start'>

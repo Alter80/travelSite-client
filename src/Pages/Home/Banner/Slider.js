@@ -12,7 +12,8 @@ const Slider = () => {
                         src="https://images.unsplash.com/photo-1597637245724-beb1e10cb79a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1632&q=80"
                         alt="First slide"
                     />
-                    <Carousel.Caption className='caption'>
+                    <Carousel.Caption className='caption' data-aos="fade-up"
+                        data-aos-anchor-placement="center-bottom">
                         <h3 className='primary-title'>Explore, Travel, Share</h3>
                         <p>Share your travel experiences with us.</p>
                         <a href="#" className="customBtn">See what we have</a>
@@ -25,7 +26,8 @@ const Slider = () => {
                         alt="Second slide"
                     />
 
-                    <Carousel.Caption className='caption'>
+                    <Carousel.Caption className='caption' data-aos="fade-up"
+                        data-aos-anchor-placement="center-bottom">
                         <h3 className='primary-title'>Explore, Travel, Share</h3>
                         <p>Share your travel experiences with us.</p>
                         <a href="#" class="customBtn">See what we have</a>
@@ -38,7 +40,8 @@ const Slider = () => {
                         alt="Third slide"
                     />
 
-                    <Carousel.Caption className='caption'>
+                    <Carousel.Caption className='caption' data-aos="fade-up"
+                        data-aos-anchor-placement="center-bottom">
                         <h3 className='primary-title'>Explore, Travel, Share</h3>
                         <p>Share your travel experiences with us.</p>
                         <a href="#" class="customBtn">See what we have</a>
