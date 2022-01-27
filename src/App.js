@@ -13,6 +13,7 @@ import PrivateRoute from './Pages/PrivateRoute/PrivateRoute';
 import Login from './Pages/Login/Login';
 import Register from './Pages/Login/Register/Register';
 import PostPage from './Pages/PostPage/PostPage';
+import DashBoard from './Pages/DashBoard/DashBoard';
 
 function App() {
   return (
@@ -40,6 +41,11 @@ function App() {
             <PrivateRoute exact path='/share'>
               <PostPage></PostPage>
             </PrivateRoute>
+
+            <PrivateRoute exact path='/dashboard'>
+              <DashBoard></DashBoard>
+            </PrivateRoute>
+
 
             <Route exact path='/login'>
               <Login></Login>

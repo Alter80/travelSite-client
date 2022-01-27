@@ -20,6 +20,15 @@ const Header = () => {
 
     }
 
+    // is admin? 
+    const isAdmin = () => {
+        if (admin == true) {
+            return <Nav.Link><Link className='text-decoration-none text-muted' to="/dashboard">My Dashboard</Link></Nav.Link>
+        }
+        else { }
+    }
+
+
     // const isAdmin = () => {
     //     if (admin === true) {
     //         return <Nav.Link><Link className='text-decoration-none text-muted' to="/dashboard">Dashboard</Link></Nav.Link>
@@ -68,9 +77,8 @@ const Header = () => {
                                         </Dropdown.Toggle>
 
                                         <Dropdown.Menu className='text-center'>
-                                            <Nav.Link><Link className='text-decoration-none text-muted' to="/dashboard">My Dashboard</Link></Nav.Link>
+                                            {isAdmin()}
                                             <Nav.Link><Link className='text-decoration-none text-muted' to="/share">Post Experience</Link></Nav.Link>
-                                            <Nav.Link><Link className='text-decoration-none text-muted' to="/myorders">My Orders</Link></Nav.Link>
                                             <Dropdown.Item href="#/action-3"><Button variant='outline-dark' onClick={logOutButton}>Logout</Button></Dropdown.Item>
                                         </Dropdown.Menu>
                                     </Dropdown>

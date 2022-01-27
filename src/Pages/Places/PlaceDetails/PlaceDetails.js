@@ -33,7 +33,7 @@ const PlaceDetails = () => {
 
                         <p className='text-start'> <strong className='text-muted'>Details: </strong>{description}</p>
 
-                        <h3>Price: <strong>{cost}</strong></h3>
+                        <h3>Price: $<strong>{cost}</strong> per person(avg.)</h3>
                     </Card.Text>
                 </Card.Body>
 

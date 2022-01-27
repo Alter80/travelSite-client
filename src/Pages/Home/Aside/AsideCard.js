@@ -1,17 +1,16 @@
 import React from 'react';
 import { Button, Card, Col } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
-import './SinglePlace.css'
 
-const SinglePlace = (props) => {
+const AsideCard = (props) => {
     const { _id, image, travelerName, email, travelLocation, description, travelCategory, cost, address, status } = props.place;
 
     const showPosts = (postStatus) => {
         if (postStatus == 'approved') {
             return <Col className='p-3' >
-                <Link to={`/places/${_id}`} className='text-decoration-none text-black '>
-                    <Card className='hover-card flex-md-row card-border'>
-                        <Card.Img className='p-3 img1  mx-auto rounded img-fluid' variant="top" src={image} />
+                <Link to={`/places/${_id}`} className='text-decoration-none text-black'>
+                    <Card className='hover-card  card-border'>
+                        <Card.Img className='p-3 img1 mx-auto rounded img-fluid' variant="top" src={image} />
 
                         <Card.Body className='text-start'>
                             <p className='text-muted'>{address}</p>
@@ -34,6 +33,7 @@ const SinglePlace = (props) => {
 
     }
 
+
     return (
         <div>
             {showPosts(status)}
@@ -41,4 +41,4 @@ const SinglePlace = (props) => {
     );
 };
 
-export default SinglePlace;
+export default AsideCard;
